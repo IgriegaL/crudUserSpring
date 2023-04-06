@@ -7,10 +7,48 @@
 	},
 	"item": [
 		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"default.user@example.com\", \"password\": \"default_password\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "ObtenerUsuarios",
 			"request": {
+				"auth": {
+					"type": "bearer"
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZWZhdWx0LnVzZXJAZXhhbXBsZS5jb20iLCJpYXQiOjE2ODA3NTkzOTIsImV4cCI6MTY4MTYyMzM5Mn0.ZRsgafVbOZYNLiduJ1Nt1JGUw_ttQatwhKXSmP-JpEi_g0sHNw_2xvzkWzQIHhn4BF5v75H3Cx91A893TqxApw",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "http://localhost:8080/users/",
 					"protocol": "http",
@@ -21,6 +59,13 @@
 					"path": [
 						"users",
 						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
 					]
 				}
 			},
