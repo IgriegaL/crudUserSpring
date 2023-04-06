@@ -1,7 +1,7 @@
 package com.springDemo;
 
-import jakarta.persistence.*;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
