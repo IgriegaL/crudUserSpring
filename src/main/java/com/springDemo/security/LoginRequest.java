@@ -1,4 +1,4 @@
-package com.springDemo.seguridad;
+package com.springDemo.security;
 
 public class LoginRequest {
 

@@ -1,4 +1,4 @@
-package com.springDemo.seguridad;
+package com.springDemo.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;

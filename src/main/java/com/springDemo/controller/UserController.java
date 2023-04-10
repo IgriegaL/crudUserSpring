@@ -1,6 +1,10 @@
-package com.springDemo;
+package com.springDemo.controller;
 
-import com.springDemo.seguridad.LoginRequest;
+import com.springDemo.repository.PhoneRepository;
+import com.springDemo.repository.UserRepository;
+import com.springDemo.model.Phone;
+import com.springDemo.model.User;
+import com.springDemo.security.LoginRequest;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
